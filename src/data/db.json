@@ -1,0 +1,75 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "adminuser",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "tri",
+      "name": "trinadh",
+      "password": "trinadh33",
+      "role": "user"
+    },
+    {
+      "id": "enduser",
+      "password": "test01",
+      "name": "ntuser",
+      "role": "manager",
+      "gender": "m",
+      "email": "ntuser@co.in"
+    }
+  ],
+  "product": [
+    {
+      "id": "0",
+      "name": "Phone",
+      "description": "Phone is Iphone 15 ",
+      "price": 1000,
+      "status": "shipped"
+    },
+    {
+      "id": "0",
+      "name": "Moto G ",
+      "description": "It's a brand new phone with many extra features like 5G, Flip and Back Camera",
+      "price": "2000",
+      "status": false
+    },
+    {
+      "id": "0",
+      "name": "Samsung",
+      "description": "It's a standard mobile with withstanding capacity ",
+      "price": "200",
+      "status": false
+    },
+    {
+      "id": "0",
+      "name": "Ipods",
+      "description": "Apple Ipods which can sense the thoughts",
+      "price": "450",
+      "status": false
+    },
+    {
+      "id": "0",
+      "name": "a",
+      "description": "as",
+      "price": 0,
+      "status": false
+    },
+    {
+     "id": "0",
+      "name": "a",
+      "description": "SDSAD",
+      "price": "200",
+      "status": false
+    },
+    {
+     "id": "0",
+      "name": "asaa",
+      "description": "sa",
+      "price": 0,
+      "status": false
+    }
+  ]
+}

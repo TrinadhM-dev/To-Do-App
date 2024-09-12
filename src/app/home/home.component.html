@@ -1,0 +1,46 @@
+<mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>{{title | uppercase}}</mat-card-title>
+      <mat-card-subtitle>{{subtitle | lowercase}}</mat-card-subtitle>
+     
+    </mat-card-header>
+   
+    <span>{{todayDate | date:'fullDate'}}</span>
+    <h2>{{salary | currency:'1.2-2'}}</h2>
+    <h2>{{salary/1000 | percent}}</h2>
+    <h2>{{_obj | json}}</h2>
+    <span>{{title | reverse}}</span>
+    <br>
+  
+  </mat-card>
+  <input type="checkbox" [checked]="isDisabled">
+  <input type="checkbox" checked={{isDisabled}}>
+  <br>
+  <input [value]="isDisabled">
+  
+  
+  <input (keyup)="updateTitle($event)">
+  <!-- Event Binding-->
+    <!-- Two way binding-->
+    <!-- <input [(ngModel)]="title"> -->
+   <button (click)=onClicker()>BTN</button>
+  
+  <br>
+  <div [ngClass]="{'active':isdisabled,'inactive':isdisabled}">
+
+    <h2>Attribute Directive</h2>
+  </div>
+  <h2 [ngStyle]="{'color':_color,'font-size.px':_font}">Styling properties</h2>
+
+ <!-- Ng if-->
+  <h3 *ngIf="isShow">trinadh</h3>
+
+<!-- Ng FOR-->
+  <div *ngFor="let i of ticketInfo" [ngStyle]="{'background-color':i.color,'color':'white'}">
+    <h1>{{i?.id}}</h1>
+    <h2>{{i?.name}}</h2>
+    <!-- {{i|json}} -->
+  </div>
+
+<!-- Ng Switch-->
+ <div [ngSwitch]="_view"></div>
